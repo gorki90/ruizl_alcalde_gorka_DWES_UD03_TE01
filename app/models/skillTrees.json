@@ -1,0 +1,2349 @@
+{
+"data":[
+    {
+      "id": 1,
+      "name": "Cabal Hermit",
+      "description": "Cabal Hermit Skills are trained by Adalbert the Hermit, at Hermit's House in northeastern Chersonese.",
+      "image":"CabalHermit.png",
+      "skills": [
+        {
+          "skillId": 1,
+          "skillName": "Reveal Soul",
+          "skillDescription": "Reveals the Soul Spots on fallen human enemies, and corpses. You may also find orbs on certain grave stones, as well as random skeleton corpses that cannot be interacted with.",
+          "skillType":"Active",
+          "conbinations":[
+            {
+              "combName":"Mana Spark",
+              "withSkill":"spark",
+              "withSkillImage":"ManaPush.png",
+              "effect":"Consumes the Soul Spot to restore Mana. Restores 50% of max Mana Mana"
+            },
+            {
+              "combName":"Soul Rupture",
+              "withSkill":"Rupture",
+              "withSkillImage":"ManaPush.png",
+              "effect":"Consumes the Soul to create an AoE Blast: Deals 100 Ethereal damage and 66 Impact Impact"
+            },
+            {
+              "combName":"Summoned Ghost",
+              "withSkill":"Conjure",
+              "withSkillImage":"Conjure.png",
+              "effect":"Summon a Ghost Ally for 280 seconds. Ghost deals 20 Ethereal Ethereal damage, with a one-handed sword. Ghost has 110 Health Health and 80 Physical Physical resistance"
+            }
+          ],
+          "damage":null,
+          "impact":null,
+          "mana": "5",
+          "cooldown":"5 seconds",
+          "cost":"50",
+          "image":"RevealSoul.png"
+        },
+        {
+          "skillId": 2,
+          "skillName": "Call to Elements",
+          "skillDescription": "Grants you a boon that varies according to your location when casting this spell.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": "5",
+          "cooldown":"120 seconds",
+          "cost":"50",
+          "image":"CalltoElements.png"
+        },
+        {
+          "skillId": 3,
+          "skillName": "Mana Push",
+          "skillDescription": "Spell which inflicts no damage but has High Impact in a wide area in front of the caster.",
+          "skillType":"Active",
+          "conbinations":[
+            {
+              "combName":"Blood Tendrils",
+              "withSkill":"Inside a Blood Sigil",
+              "withSkillImage":"ManaPush.png",
+              "effect":"The Mana Push gains Blood Tendril effects: Adds 50 Decay and 50 Physical damage. Adds 25 Impact. Add 3% Corruption to caster (once)."
+            },
+            {
+              "combName":"Ethereal Bolt",
+              "withSkill":"Inside a Sigil of Wind",
+              "withSkillImage":"ManaPush.png",
+              "effect":"Launch a long-range Ethereal bolt. Deals 25 ethereal damage and 100 impact."
+            },
+            {
+              "combName":"Frost Push",
+              "withSkill":"Inside a Sigil of Ice",
+              "withSkillImage":"ManaPush.png",
+              "effect":"Launch a Frost projectile from the push. Deals 85 frost damage and 60 impact. Inflicts Slow"
+            }
+          ],
+          "damage":"1",
+          "impact":"100",
+          "mana": "5",
+          "cooldown":"15 seconds",
+          "cost":"50",
+          "image":"ManaPush.png"
+        },
+        {
+          "skillId": 4,
+          "skillName": "Weather Tolerance",
+          "skillDescription": "Increases your Hot and Cold Weather Defense by 8. Increases your Decay Resistance by 5.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage": null,
+          "impact": null,
+          "mana": null,
+          "cooldown": null,
+          "cost":"100",
+          "image":"WeatherTolerance.png"
+        },
+        {
+          "skillId": 5,
+          "skillName": "Shamanic Resonance",
+          "skillDescription": "The effects of boons on you are increased. For example, a boon that increases your Fire Resistance by 20 would increase it by 30 instead.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage": null,
+          "impact": null,
+          "mana": null,
+          "cooldown": null,
+          "cost":"500 & 1 Breakthrough point",
+          "image":"ShamanicResonance.png"
+        },
+        {
+          "skillId": 6,
+          "skillName": "Sigil of Wind",
+          "skillDescription": "Required: Activated Wind Altar. Create a magic circle on the ground. Certain skills have additional effects when cast within this circle.",
+          "skillType":"Active",
+          "conbinations":[
+            {
+              "combName":"Ethereal Bolt",
+              "withSkill":"Mana Push",
+              "withSkillImage":"ManaPush.png",
+              "effect":"Launch a long-range Ethereal bolt. Deals 25 ethereal damage and 100 impact."
+            },
+            {
+              "combName":"Lightning Bullet",
+              "withSkill":"Fire and Reload",
+              "withSkillImage":"ManaPush.png",
+              "effect":"Pistol shot becomes a powerful Lightning projectile.Damage and impact are increased to (1.6x) of their normal value and converted to lightning."
+            },
+            {
+              "combName":"Lightning Spark",
+              "withSkill":"Spark",
+              "withSkillImage":"ManaPush.png",
+              "effect":"Creates a Lightning explosion from the Spark. Deals 85 lightning damage and 75 impact."
+            },
+            {
+              "combName":"Lightning Strike",
+              "withSkill":"Conjure",
+              "withSkillImage":"Conjure.png",
+              "effect":"Creates a large Lightning explosion centered on the Sigil. Deals 165 lightning damage and 200 impact."
+            }
+          ],
+          "damage":null,
+          "impact":null,
+          "mana": "10",
+          "cooldown":"100 seconds",
+          "cost":"600",
+          "image":"SigilofWind.png"
+        },
+        {
+          "skillId": 7,
+          "skillName": "Infuse Wind",
+          "skillDescription": "Required: Activated Wind Altar. Increases the Impact and Attack Speed of your melee weapon for 3 minutes. Your stamina burn increases more quickly, however.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage": null,
+          "impact": null,
+          "mana": "15",
+          "cooldown": "240 seconds",
+          "cost":"600",
+          "image":"InfuseWind.png"
+        },
+        {
+          "skillId": 8,
+          "skillName": "Conjure",
+          "skillDescription": "Spell which does nothing on its own, but can be combined with other abilites.",
+          "skillType":"Active",
+          "conbinations":[
+            {
+              "combName":"Blood Turret",
+              "withSkill":"Blood Sigil",
+              "withSkillImage":"ManaPush.png",
+              "effect":"Summons a Decay turret above the Sigil which lasts 30 seconds. Shoots once per second, dealing 15 Decay damage and 10 Impact. Add 6% Corruption to caster (once)."
+            },
+            {
+              "combName":"Summoned Ghost",
+              "withSkill":"Reveal Sould",
+              "withSkillImage":"RevealSoul.png",
+              "effect":"Summon a Ghost Ally for 280 seconds. Ghost deals 20 Ethereal damage, with a one-handed sword. Ghost has 110 Health and 80 Physical resistance"
+            },
+            {
+              "combName":"Lightning Strike",
+              "withSkill":"Inside a Sigil of Wind",
+              "withSkillImage":"SigilofWind.png",
+              "effect":"Creates a large Lightning explosion centered on the Sigil. Deals 165 lightning damage and 200 impact."
+            }
+          ],
+          "damage":null,
+          "impact":null,
+          "mana": "10",
+          "cooldown":"8 seconds",
+          "cost":"600",
+          "image":"Conjure.png"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Kazite Spellblade",
+      "description": "Kazite Spellblade skills focus on adaptability in combat and the infusion of elements into weapons. Kazite Spellblade skills are trained by Eto Akiyuki in the city of Cierzo.",
+      "image":"KaziteSpellblade.png",
+      "skils": [
+        {
+          "skillId": 9,
+          "skillName": "Steady Arm",
+          "skillDescription": "Increases Impact Resistance by 10 while you are blocking.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"50",
+          "image":"SteadyArm.png"
+        },
+        {
+          "skillId": 10,
+          "skillName": "Shield Charge",
+          "skillDescription": "Required: Shield. Rush forward to hit foes with your shield for high Impact. Can hit the target twice. Deals the damage and impact from the equipped Shield, as well as any Effects on the shield",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":"1.0x Shield damage",
+          "impact":"1.0x Shield impact",
+          "mana": "15 Stamina",
+          "cooldown":"30 seconds",
+          "cost":"100",
+          "image":"ShieldCharge.png"
+        },
+        {
+          "skillId": 11,
+          "skillName": "Fitness",
+          "skillDescription": "Increases your maximum Health by 25 and the amount of Health you restore while sleeping by 20%.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"50",
+          "image":"Fitness.png"
+        },
+        {
+          "skillId": 12,
+          "skillName": "Spellblade's Awakening",
+          "skillDescription": "Increases your maximum Health, Stamina and Mana by 15 each. If you have not yet unlocked Mana at a Ley Line this passive will not grant you any Mana. Its effect will be applied when you unlock mana later.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"500 & 1 Breakthrough",
+          "image":"SpellbladesAwakening.png"
+        },
+        {
+          "skillId": 13,
+          "skillName": "Infuse Fire",
+          "skillDescription": "Required: Warm Boon. Temporarily adds fire damage to your melee weapon and inflicts Burning on enemies. Consumes your Warm boon.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":"Increases damage by 25% as Fire damage, grants +7 flat Fire damage & inflicts Burning (49%).",
+          "impact":null,
+          "mana": "15",
+          "cooldown":null,
+          "cost":"600",
+          "image":"InfuseFire.png"
+        },
+        {
+          "skillId": 14,
+          "skillName": "Infuse Frost",
+          "skillDescription": "Required: Cool Boon. Temporarily adds ice damage to your melee weapon and inflicts Slow Down on enemies. Consumes your Cool boon.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":"Increases damage by 25% as Frost damage, grants +10 flat Frost damage & inflicts Slow down (49%).",
+          "impact":null,
+          "mana": "15",
+          "cooldown":null,
+          "cost":"600",
+          "image":"InfuseFrost.png"
+        },
+        {
+          "skillId": 15,
+          "skillName": "Gong Strike",
+          "skillDescription": "Strike your weapon on your shield, removing the elemental infusion to make an explosion of that element.",
+          "skillType":"Active",
+          "conbinations":[
+            {
+              "combName":"Fire Imbues",
+              "withSkill":"Infuse Fire",
+              "withSkillImage":"InfuseFire.png",
+              "effect":"Damage overrides to Fire. Damage multiplier: 2.2x. Impact multiplier: 1.4x. Inflicts Burning"
+            },
+            {
+              "combName":"Frost Imbues",
+              "withSkill":"Infuse Frost",
+              "withSkillImage":"InfuseFrost.png",
+              "effect":"Damage overrides to Frost. Damage multiplier: 2.2x. Impact multiplier: 1.4x. Inflicts Slow down."
+            },
+            {
+              "combName":" Ethereal Imbues",
+              "withSkill":"Infuse Ethereal",
+              "withSkillImage":"InfuseFire.png",
+              "effect":"Damage overrides to Ethereal. Damage multiplier: 2.6x. Impact multiplier: 1.6x."
+            },
+            {
+              "combName":"Decay Imbues",
+              "withSkill":"Infuse Decay",
+              "withSkillImage":"InfuseFire.png",
+              "effect":"Damage overrides to Decay.Damage multiplier: 2.6x. Impact multiplier: 1.6x."
+            },
+            {
+              "combName":"Poison Imbues",
+              "withSkill":"Infuse Poison",
+              "withSkillImage":"InfuseFire.png",
+              "effect":"Damage overrides to Decay. Damage multiplier: 2.0x. Impact multiplier: 0x. Inflicts Extreme Poison"
+            },
+            {
+              "combName":"Lightning Imbues",
+              "withSkill":"Infuse Lightning",
+              "withSkillImage":"InfuseFire.png",
+              "effect":"Damage overrides to Lightning. Damage multiplier: 2.3x. Impact multiplier: 1.9x."
+            },
+            {
+              "combName":"Wind Imbues",
+              "withSkill":"Infuse Wind",
+              "withSkillImage":"InfuseWind.png",
+              "effect":"No damage. Guaranteed to knock all affected targets down (deals 99x impact)."
+            }
+          ],
+          "damage":null,
+          "impact":null,
+          "mana": "11 Stamina",
+          "cooldown":"30 seconds",
+          "cost":"600",
+          "image":"GongStrike.png"
+        },
+        {
+          "skillId": 16,
+          "skillName": "Elemental Discharge",
+          "skillDescription": "Required: Infused Weapon. Shoot a projectile of the element that is infused on your weapon.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":"It adds a 60 damage of the type of the Imbued element, exept on Wind Imbues which adds 30 damage.",
+          "impact":"It adds a 60 impact, exept on Wind Imbues which adds 140 impact.",
+          "mana": "15",
+          "cooldown":"10",
+          "cost":"600",
+          "image":"ElementalDischarge.png"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Mercenary",
+      "description": "Mercenary skills are trained by Jaimon in Levant.",
+      "image":"Mercenary.png",
+      "skills": [
+        {
+          "skillId": 17,
+          "skillName": "Shatter Bullet",
+          "skillDescription": "Required: Pistol, Iron Scraps. Load a bullet with high Impact which also inflicts Pain. Shooting it requires the use of the Fire/Reload skill.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":"All damage is converted to Physical Physical. Inflicts Pain",
+          "impact":"Next shot deals high Impact",
+          "mana": null,
+          "cooldown":"5 seconds",
+          "cost":"50",
+          "image":"ShetterBullet.png"
+        },
+        {
+          "skillId": 18,
+          "skillName": "Frost Bullet",
+          "skillDescription": "Required: Pistol, Cool Boon. Load the pistol with a bullet that makes a short-distance blast which slows enemies. Removes your Cool boon. Shooting it requires use of the Fire/Reload skill.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":"Next shot creates a Frost Frost explosion with bonus damage. Inflicts Slow Down, Crippled and pistol's effects",
+          "impact":null,
+          "mana": null,
+          "cooldown":"None",
+          "cost":"100",
+          "image":"FrostBullet.png"
+        },
+        {
+          "skillId": 19,
+          "skillName": "Fast Maintenance",
+          "skillDescription": "You repair your equipment 50% faster when you allocate time to Repairing in the rest menu.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"50",
+          "image":"FastMaintenance.png"
+        },
+        {
+          "skillId": 20,
+          "skillName": "Armor Training",
+          "skillDescription": "Decreases the stamina and movement penalties from wearing armor by 50%.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"100",
+          "image":"ArmorTraining.png"
+        },
+        {
+          "skillId": 21,
+          "skillName": "Swift Foot",
+          "skillDescription": "Your movement speed is increased by 10%.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"500 & 1 Breakthrough point",
+          "image":"SwiftFoot.png"
+        },
+        {
+          "skillId": 22,
+          "skillName": "Marathoner",
+          "skillDescription": "Sprinting consumes 40% less stamina.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"600",
+          "image":"Marathoner.png"
+        },
+        {
+          "skillId": 23,
+          "skillName": "Shield Infusion",
+          "skillDescription": "Block an elemental attack. When you next block, an elemental explosion will burst from you. If you block an attack which deals elemental (non-Physical physical) damage during the animation, you gain a Shield Imbue of that element. In the case of multiple elements on one attack, the priority is Fire > Frost > Lightning > Decay > Ethereal. When you have a Shield Imbue, the next blocked melee attack will create an area-of-effect explosion.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":"1.3x equipped Shield damage as Ethereal damage and 2.0x equipped Shield damage as the element of the imbue (either Ethereal Decay Lightning Frost Fire)",
+          "impact":"2.0x equipped shield Impact damage",
+          "mana": "5 Stamina",
+          "cooldown":"60 seconds",
+          "cost":"600",
+          "image":"ShieldInfusion.png"
+        },
+        {
+          "skillId": 24,
+          "skillName": "Blood Bullet",
+          "skillDescription": "Required: Pistol, Possessed Boon. Absorb the enemy's life into your pistol as a blood bullet, healing yourself (40 health). Shooting it requires the use of the Fire/Reload skill.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":"Next shot deals 40 Decay damage and applies equipped pistol's effects. Pistol's damage is converted to Decay Decay. Damage multiplier: 0.8x",
+          "impact":null,
+          "mana": "12",
+          "cooldown":"30 seconds",
+          "cost":"600",
+          "image":"BloodBullet.png"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Philosofer",
+      "description": "Philosopher skills are trained by Alemmon in the city of Monsoon.",
+      "image":"Philosopher.png",
+      "skills": [
+        {
+          "skillId": 25,
+          "skillName": "Chakram Pierce",
+          "skillDescription": "Required: Chakram, Discipline Boon. Launch the disc forward, possibly hitting the enemy twice. Discipline is required to cast this spell.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":"1.0x Damage",
+          "impact":"1.0x Impact",
+          "mana": "5",
+          "cooldown":"6 seconds",
+          "cost":"50",
+          "image":"ChakramPierce.png"
+        },
+        {
+          "skillId": 26,
+          "skillName": "Chakram Arc",
+          "skillDescription": "Required: Chakram, Discipline Boon. The disc sweeps the area in front of the caster, dealing high Damage and Impact. Discipline is required to cast this spell.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":"1.5x Damage",
+          "impact":"4.0x Impact",
+          "mana": "8",
+          "cooldown":"12 seconds",
+          "cost":"100",
+          "image":"ChakramArc.png"
+        },
+        {
+          "skillId": 27,
+          "skillName": "Sigil of Fire",
+          "skillDescription": "Consumes: Fire Stone. Create a magic circle on the ground. Certain skills have additional effects when cast within this circle. The Sigil itself will raise players' temperatures by +28 Hot while they stand inside it.",
+          "skillType":"Active",
+          "conbinations":[
+            {
+              "combName":"Fireball",
+              "withSkill":"Spark",
+              "withSkillImage":"ManaPush.png",
+              "effect":"Launch a fast-moving Fireball projectile. Deals 60 fire damage and 60 impact. Inflicts Burning"
+            },
+            {
+              "combName":"Immolate",
+              "withSkill":"Mana Ward",
+              "withSkillImage":"ManaWard.png",
+              "effect":"Receive the Immolate effect for 60 seconds. +30% Fire fire damage bonus. Receive 0.5 Fire fire damage per second."
+            },
+            {
+              "combName":"Ring of Fire",
+              "withSkill":"Flint and Steel",
+              "withSkillImage":"ManaPush.png",
+              "effect":"Sets the Sigil ablaze for 25 seconds. Deals 6 Fire fire damage every 0.25 seconds. Inflicts Burning"
+            }
+          ],
+          "damage":null,
+          "impact":null,
+          "mana": "7",
+          "cooldown":"60 seconds",
+          "cost":"50",
+          "image":"SigilofFire.png"
+        },
+        {
+          "skillId": 28,
+          "skillName": "Mana Ward",
+          "skillDescription": "Envelops you in Mana and, for an instant, you become immune to Damage. Can be combined with other spells for powerful effects.",
+          "skillType":"Active",
+          "conbinations":[
+            {
+              "combName":"Frost Burst",
+              "withSkill":"Inside a Sigil of Ice",
+              "withSkillImage":"SigilofIce.png",
+              "effect":"Creates a short-range Frost explosion centered on you. Deals 100 Frost frost damage and 60 Impact impact. Inflicts Slow Down"
+            },
+            {
+              "combName":"Gift of Blood",
+              "withSkill":"Inside a Blood Sigil",
+              "withSkillImage":"ManaWard.png",
+              "effect":"Receive the Gift of Blood effect for 60 seconds. -1 Health Health per second. +15% Physical Physical Frost Frost and Decay Decay damage. Gain +3% Corruption Corruption (once). Nearby ally or Summoned Ghost will receive Gift of Blood Ally"
+            },
+            {
+              "combName":"Immolate",
+              "withSkill":"Inside a Sigil of Fire",
+              "withSkillImage":"SigilofFire.png",
+              "effect":"Receive the Immolate effect for 60 seconds. +30% Fire fire damage bonus. Receive 0.5 Fire fire damage per second."
+            }
+          ],
+          "damage": null,
+          "impact": null,
+          "mana": "7",
+          "cooldown": "20 seconds",
+          "cost":"50",
+          "image":"ManaWard.png"
+        },
+        {
+          "skillId": 29,
+          "skillName": "Leyline Connection",
+          "skillDescription": "Unlike Mana Ratio Recovery, this is not a percent of your maximum mana, but rather it is always 0.34 Mana per second.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage": null,
+          "impact": null,
+          "mana": null,
+          "cooldown": null,
+          "cost":"500 & 1 Breakthrough point",
+          "image":"LeylineConnection.png"
+        },
+        {
+          "skillId": 30,
+          "skillName": "Sigil of Ice",
+          "skillDescription": "Consumes: Cold Stone. Create a magic circle on the ground. Certain skills have additional effects when cast within this circle. The Sigil itself will cool the player's temperature down by -18 Cold while they stand inside it.",
+          "skillType":"Active",
+          "conbinations":[
+            {
+              "combName":"Frost Burst",
+              "withSkill":"Mana Ward",
+              "withSkillImage":"ManaWard.png",
+              "effect":"Creates a short-range Frost explosion centered on you. Deals 100 Frost frost damage and 60 Impact impact. Inflicts Slow Down"
+            },
+            {
+              "combName":"Frost Kick",
+              "withSkill":"Push Kick",
+              "withSkillImage":"ManaPush.png",
+              "effect":"Creates a short-range Frost explosion where you kick. Deals 60 frost damage and 50 impact. Inflicts Slow Down"
+            },
+            {
+              "combName":"Frost Push",
+              "withSkill":"Mana Push",
+              "withSkillImage":"ManaPush.png",
+              "effect":"Launch a Frost projectile from the push. Deals 85 frost damage and 60 impact. Inflicts Slow"
+            }
+          ],
+          "damage":null,
+          "impact":null,
+          "mana": "7",
+          "cooldown":"None",
+          "cost":"600",
+          "image":"SigilofIce.png"
+        },
+        {
+          "skillId": 31,
+          "skillName": "Chakram Dance",
+          "skillDescription": "Required: Chakram, Discipline Boon. The disc sways left and right as it advances, hitting multiple times and dealing high damage. Discipline is required to cast this spell.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage": null,
+          "impact": "Impact is multiplied by 0.8x",
+          "mana": "20",
+          "cooldown": "120 seconds",
+          "cost":"600",
+          "image":"ChakramDance.png"
+        },
+        {
+          "skillId": 32,
+          "skillName": "Fire Affinity",
+          "skillDescription": "Increase your resistance to Fire by 20% and the Fire damage you inflict is increased by 15%.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"600",
+          "image":"FireAffinity.png"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Rogue Engineer",
+      "description": "Rogue Engineer skills are taught by Styx in the Slums of Levant.",
+      "image":"RogueEngineer.png",
+      "skills": [
+        {
+          "skillId": 33,
+          "skillName": "Backstab",
+          "skillDescription": "Required: Dagger. Dagger attack. If the attack hits the enemy's back, the damage and impact are tripled.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":"1.0x Dagger damage, If hit enemy's back: 4.0x Damage",
+          "impact":"1.0x Impact, If hit enemy's back: 4.0x Impact",
+          "mana": "5 Stamina",
+          "cooldown":"15 seconds",
+          "cost":"50",
+          "image":"Backstab.png"
+        },
+        {
+          "skillId": 33,
+          "skillName": "Sweep Kick",
+          "skillDescription": "Weak attack with wide arc of effect and high impact. Will knock down a target afflicted by Confusion status effect.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":"20",
+          "impact":"85, If the target has Confusion, they will receive 99999 Impact, which is a guaranteed knockdown unless they have 100% Impact resist",
+          "mana": "12 Stamina",
+          "cooldown":"15 seconds",
+          "cost":"50",
+          "image":"SweepKick.png"
+        },
+        {
+          "skillId": 34,
+          "skillName": "Pressure Plate Training",
+          "skillDescription": "Enable you to deploy complex Pressure Plate Traps. These traps are primarily armed with charges, which shoot poison, fire and more.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"50",
+          "image":"PressurePlateTraining.png"
+        },
+        {
+          "skillId": 35,
+          "skillName": "Opportunist Stab",
+          "skillDescription": "Dagger attack. If the enemy has the Pain or Confusion hex, this attack's damage and knockback are tripled. If it has both, it is 6 times stronger instead. The hex status will be removed once the enemy is hit.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":"Enemy has Pain or Confusion:3.0x Damage, Enemy has Pain and Confusion: 6.0x Damage",
+          "impact":"Enemy has Pain or Confusion:3.0x Impact, Enemy has Pain and Confusion: 6.0x Impact",
+          "mana": "5 Stamina",
+          "cooldown":"10 seconds",
+          "cost":"100",
+          "image":"OportunistStab.png"
+        },
+        {
+          "skillId": 36,
+          "skillName": "Feather Dodge",
+          "skillDescription": "Lowers the Stamina cost of dodging by 50% and allows you to dodge unimpeded even when wearing a backpack.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"500 & 1 Breakthrough point",
+          "image":"FeatherDodge.png"
+        },
+        {
+          "skillId": 37,
+          "skillName": "Serpent's Parry",
+          "skillDescription": "Required: Dagger. Counter a physical attack with a strong dagger strike. Targets afflicted by Confusion are briefly stunned. Targets afflicted by Pain will be inflicted Extreme Bleeding.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":"2.0x Damage",
+          "impact":"2.0x Impact",
+          "mana": "7 Stamina",
+          "cooldown":"100 seconds",
+          "cost":"600",
+          "image":"SerpentsParry.png"
+        },
+        {
+          "skillId": 38,
+          "skillName": "Stealth Training",
+          "skillDescription": "Enemies will have a harder time spotting you. Sprinting and having a light source will still easily alert them, though.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"600",
+          "image":"StealthTraining.png"
+        },
+        {
+          "skillId": 39,
+          "skillName": "Pressure Plate Expertise",
+          "skillDescription": "Increases the power of your Pressure Plate Traps. Allows reuse of Pressure Plates after they have been triggered, though they must be re-armed with another charge or compatible item.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"600",
+          "image":"PressurePlateExpertise.png"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Rune Sage",
+      "description": "Rune Sage skills are trained by Flase, Sage Trainer in the city of Berg.",
+      "image":"RuneSage.png",
+      "skills": [
+        {
+          "skillId": 40,
+          "skillName": "Dez",
+          "skillDescription": "Blue rune that does nothing on its own, but can produce combo effects by casting other runes in the correct order.",
+          "skillType":"Active",
+          "conbinations":[
+            {
+              "combName":"Runic Heal",
+              "withSkill":"Runic Protection + Egoth + Dez ",
+              "withSkillImage":"Egoth.png",
+              "effect":"Consumes your Runic Protection to heal yourself. Restores 40 Health Health"
+            },
+            {
+              "combName":"Runic Lantern",
+              "withSkill":"Fal + Dez",
+              "withSkillImage":"Fal.png",
+              "effect":"Summons a Runic Lantern. A magical hands-free Lantern which lasts for 300 seconds (5 minutes)"
+            },
+            {
+              "combName":"Runic Protection",
+              "withSkill":"Dez + Egoth",
+              "withSkillImage":"Egoth.png",
+              "effect":"Grants Runic Protection for 180 seconds. +15 Physical physical resistance. +2 Protection Protection"
+            }
+          ],
+          "damage":null,
+          "impact":null,
+          "mana": "8",
+          "cooldown":"2 seconds",
+          "cost":"50",
+          "image":"Dez.png"
+        },
+        {
+          "skillId": 41,
+          "skillName": "Egoth",
+          "skillDescription": "Purple rune that does nothing on its own, but can produce combo effects by casting other runes in the correct order.",
+          "skillType":"Active",
+          "conbinations":[
+            {
+              "combName":"Runic Heal",
+              "withSkill":"Runic Protection + Egoth + Dez ",
+              "withSkillImage":"Egoth.png",
+              "effect":"Consumes your Runic Protection to heal yourself. Restores 40 Health"
+            },
+            {
+              "combName":"Runic Blade",
+              "withSkill":"Shim + Egoth",
+              "withSkillImage":"Shim.png",
+              "effect":"Summons a Runic Blade for 180 seconds. Deals 31 ethereal damage and 12 impact. Lasts until timer expires, or unequipped"
+            },
+            {
+              "combName":"Runic Protection",
+              "withSkill":"Dez + Egoth",
+              "withSkillImage":"Egoth.png",
+              "effect":"Grants Runic Protection for 180 seconds. +15 physical resistance. +2 Protection"
+            },
+            {
+              "combName":"Great Runic Blade",
+              "withSkill":"Runic Blade + Shim + Egoth",
+              "withSkillImage":"Shim.png",
+              "effect":"Summons a Great Runic Blade for 180 seconds. Deals 39 ethereal damage and 19 impact. Lasts until timer expires, or unequipped"
+            }
+          ],
+          "damage":null,
+          "impact":null,
+          "mana": "8",
+          "cooldown":"2 seconds",
+          "cost":"50",
+          "image":"Egoth.png"
+        },
+        {
+          "skillId": 42,
+          "skillName": "Fal",
+          "skillDescription":"Green rune that does nothing on its own, but can produce combo effects by casting other runes in the correct order.",
+          "skillType":"Active",
+          "conbinations":[
+            {
+              "combName":"Runic Trap",
+              "withSkill":"Shim + Fal",
+              "withSkillImage":"Shim.png",
+              "effect":"Summons a magic trap. When triggered: Deals 70 ethereal damage and 100 impact"
+            },
+            {
+              "combName":"Runic Lantern",
+              "withSkill":"Fal + Dez",
+              "withSkillImage":"Dez.png",
+              "effect":"Summons a Runic Lantern. A magical hands-free Lantern which lasts for 300 seconds (5 minutes)"
+            },
+            {
+              "combName":"Runic Lightning",
+              "withSkill":"Runic Lantern + Fal + Shim",
+              "withSkillImage":"Shim.png",
+              "effect":"Launch a fast-moving Lightning projectile. Deals 55 lightning damage and 30 impact"
+            }
+          ],
+          "damage":null,
+          "impact":null,
+          "mana": "8",
+          "cooldown":"2 seconds",
+          "cost":"50",
+          "image":"Fal.png"
+        },
+        {
+          "skillId": 42,
+          "skillName": "Shim",
+          "skillDescription":"Red rune that does nothing on its own, but can produce combo effects by casting other runes in the correct order.",
+          "skillType":"Active",
+          "conbinations":[
+            {
+              "combName":"Runic Trap",
+              "withSkill":"Shim + Fal",
+              "withSkillImage":"Fal.png",
+              "effect":"Summons a magic trap. When triggered: Deals 70 ethereal damage and 100 impact"
+            },
+            {
+              "combName":"Runic Blade",
+              "withSkill":"Shim + Egoth",
+              "withSkillImage":"Egoth.png",
+              "effect":"Summons a Runic Blade for 180 seconds. Deals 31 ethereal damage and 12 impact. Lasts until timer expires, or unequipped"
+            },
+            {
+              "combName":"Runic Lightning",
+              "withSkill":"Runic Lantern + Fal + Shim",
+              "withSkillImage":"Fal.png",
+              "effect":"Launch a fast-moving Lightning projectile. Deals 55 lightning damage and 30 impact"
+            },
+            {
+              "combName":"Great Runic Blade",
+              "withSkill":"Runic Blade + Shim + Egoth",
+              "withSkillImage":"Egoth.png",
+              "effect":"Summons a Great Runic Blade for 180 seconds. Deals 39 ethereal damage and 19 impact. Lasts until timer expires, or unequipped"
+            },
+            {
+              "combName":"Runic Detonation",
+              "withSkill":"Runic Trap + Shim + Shim",
+              "withSkillImage":"Shim.png",
+              "effect":"Detonate the Runic Trap instantly with a larger explosion. Deals 70 Ethereal ethereal damage and 150 Impact impact"
+            }
+          ],
+          "damage":null,
+          "impact":null,
+          "mana": "8",
+          "cooldown":"2 seconds",
+          "cost":"50",
+          "image":"Shim.png"
+        },
+        {
+          "skillId": 43,
+          "skillName": "Well of Mana",
+          "skillDescription": "Increases your maximum Mana by 40. If you have not yet unlocked Mana at a Ley Line this passive will not grant you any Mana. Its effect will be applied when you unlock mana later.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"500 & 1 Breakthrough point",
+          "image":"WellofMana.png"
+        },
+        {
+          "skillId": 44,
+          "skillName": "Arcane Syntax",
+          "skillDescription": "Gain access to more advanced runic combos.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"600",
+          "image":"ArcaneSyntax.png"
+        },
+        {
+          "skillId": 45,
+          "skillName": "Internalized Lexicon",
+          "skillDescription": "Removes the need to have an equipped Lexicon in your off-hand to cast runic spells.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"600",
+          "image":"InternalizedLexicon.png"
+        },
+        {
+          "skillId": 46,
+          "skillName": "Runic Prefix",
+          "skillDescription": "All runic spells are more powerful or have added effects.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"600",
+          "image":"RunicPrefix.png"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Warrior Monk",
+      "description": "Warrior Monk Skills give both defensive and offensive power in combat, utilising counters to gain the Discipline boon which in turn allows the usage of powerful attacks. Warrior Monk skills are trained by Galira in the city of Monsoon.",
+      "image":"WarriorMonk.png",
+      "skills": [
+        {
+          "skillId": 47,
+          "skillName": "Brace",
+          "skillDescription": "Blocks an attack, restoring your stability and giving you the Discipline boon. All nearby enemies are knocked back.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":"200 seconds",
+          "cost":"50",
+          "image":"Brace.png"
+        },
+        {
+          "skillId": 48,
+          "skillName": "Slow Metabolism",
+          "skillDescription":"It takes more time for you to become hungry, thirsty and sleepy.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"50",
+          "image":"SlowMetabolism.png"
+        },
+        {
+          "skillId": 49,
+          "skillName": "Focus",
+          "skillDescription": "Grants the discipline boon, which increases the physical damage of your attacks. Using this skill burns a bit of your maximum stamina until the next time you sleep. Certain skills require this boon to be active.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":"+15% Physical damage",
+          "impact":null,
+          "mana": "4 Stamina",
+          "cooldown":"500 seconds",
+          "cost":"50",
+          "image":"Focus.png"
+        },
+        {
+          "skillId": 50,
+          "skillName": "Steadfast Ascetic",
+          "skillDescription": "Increases your maximum Stamina by 40.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"500 & 1 Breakthrough point",
+          "image":"SteadfastAscetic.png"
+        },
+        {
+          "skillId": 51,
+          "skillName": "Perfect Strike",
+          "skillDescription": "Required: Any Melee Weapon, Discipline Boon. Lunging attack that ignores all defenses and inflicts Pain.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":"25 Raw, 2.0x Damage",
+          "impact":null,
+          "mana": null,
+          "cooldown":"30 seconds",
+          "cost":"500",
+          "image":"PerfectSrike.png"
+        },
+        {
+          "skillId": 52,
+          "skillName": "Master of Motion",
+          "skillDescription": "While under the effect of the Discipline boon, Impact Resistance and all damage resistances are increased by 10.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"600",
+          "image":"MasterofMotion.png"
+        },
+        {
+          "skillId": 53,
+          "skillName": "Flash Onslaught",
+          "skillDescription": "Required: Any Melee Weapon, Discipline Boon. Attack all enemies within a close distance with increased Damage and Impact. Using the skill consumes the Discipline boon.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":"57 Physical, 1.65x Damage",
+          "impact":"2.0x Impact",
+          "mana": "25 Stamina",
+          "cooldown":"240 seconds",
+          "cost":"600",
+          "image":"FlashOnslaught.png"
+        },
+        {
+          "skillId": 54,
+          "skillName": "Counterstrike",
+          "skillDescription": "Required: Any Melee Weapon. Completely block a physical attack, striking the attacker and dealing high Damage.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":"2.5x Damage",
+          "impact":"3.0x Impact",
+          "mana": "12",
+          "cooldown":"100 seconds",
+          "cost":"600",
+          "image":"Counterstrike.png"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Wild Hunter",
+      "description": "Wild Hunter Skills are trained by Ture in the city of Berg.",
+      "image":"WildHunter.png",
+      "skills": [
+        {
+          "skillId": 55,
+          "skillName": "Enrage",
+          "skillDescription": "Grants the Rage boon, which increases the Impact of your attacks. Using this skill burns a bit of your maximum health until the next time you sleep. Certain skills require this boon to be active.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":"500 seconds",
+          "cost":"50",
+          "image":"Enrage.png"
+        },
+        {
+          "skillId": 56,
+          "skillName": "Evasion Shot",
+          "skillDescription":"Shoot an arrow while jumping backwards. Causes the Cripple status effect on the target. Locking on foes is essential with this skill.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": "12 Stamina",
+          "cooldown":"30 seconds",
+          "cost":"50",
+          "image":"EvasionShot.png"
+        },
+        {
+          "skillId": 57,
+          "skillName": "Hunter's Eye",
+          "skillDescription": "You can lock on enemies at longer distances when using a bow.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"50",
+          "image":"HutersEye.png"
+        },
+        {
+          "skillId": 58,
+          "skillName": "Sniper Shot",
+          "skillDescription": "Required: Bow. Let loose a very strong arrow shot with a long windup, making it a poor option in the middle of combat.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":"2.5x Damage",
+          "impact":"3.0x Impact",
+          "mana": "15 Stamina",
+          "cooldown":"30 seconds",
+          "cost":"100",
+          "image":"SniperShot.png"
+        },
+        {
+          "skillId": 59,
+          "skillName": "Survivor's Resilience",
+          "skillDescription": "Increases your maximum health by 40.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"500 & 1 Breakthrough point",
+          "image":"SurvivorsResilience.png"
+        },
+        {
+          "skillId": 60,
+          "skillName": "Predator Leap",
+          "skillDescription": "Required: Rage Boon. Jumping attack that creates a shockwave upon landing, with high Impact and Damage.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":	"1.5x Damage",
+          "impact":"+30 Impact, 2.0x Impact",
+          "mana": "13 Stamina",
+          "cooldown":"40 seconds",
+          "cost":"600",
+          "image":"PredatorLeap.png"
+        },
+        {
+          "skillId": 61,
+          "skillName": "Piercing Shot",
+          "skillDescription": "Required: Bow. Strong shot that goes through enemies and hits other foes behind. Inflicts Extreme Bleeding.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":"1.5x Damage",
+          "impact":"0.5x Impact",
+          "mana": "15 Stamina",
+          "cooldown":"30 seconds",
+          "cost":"600",
+          "image":"PoercingShot.png"
+        },
+        {
+          "skillId": 62,
+          "skillName": "Feral Strikes",
+          "skillDescription": "Required: Melee Weapon, Rage Boon. Attack twice, consuming your Rage boon in the process. Inflicts Extreme Bleeding and Pain.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":"1.75x Damage",
+          "impact":"1.75x Impact",
+          "mana": "10 Stamina",
+          "cooldown":"8 seconds",
+          "cost":"600",
+          "image":"FeralStrikes.png"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Hex Mage",
+      "description": "Hex Mage Skills are trained by Ella Lockwell in the city of Harmattan. These skills are exclusive to The Soroboreans DLC.",
+      "image":"HexMage.png",
+      "skills": [
+        {
+          "skillId": 63,
+          "skillName": "Jinx",
+          "skillDescription": "Inflicts a random Hex debuff on the target. Will randomly inflict one of: Chill, Curse, Doom, Haunted or Scorched (equal random chance) on the target enemy.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": "8",
+          "cooldown":"5 seconds",
+          "cost":"50",
+          "image":"Jinx.png"
+        },
+        {
+          "skillId": 64,
+          "skillName": "Torment",
+          "skillDescription":"Triggers a related reaction in all nearby enemies afflicted with a Hex.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":"Chill: 25 Frost damage, inflicts Slow Down. Curse: 20 Decay damage, inflicts Poisoned. Doomed: 20 Lightning damage, inflicts Weaken. Haunted: 20 Ethereal damage, inflicts Sapped. Scorched: 20 Fire damage, inflicts Burning. Pain: 10 Ethereal damage, inflicts Bleeding.",
+          "impact":"Confusion: 0 damage, 50 Impact, re-applies Confusion",
+          "mana": "10",
+          "cooldown":"10 seconds",
+          "cost":"100",
+          "image":"Torment.png"
+        },
+        {
+          "skillId": 65,
+          "skillName": "Nightmares",
+          "skillDescription": "Reduces Max Mana burn from sleeping by 25%, reduces Max Stamina burn recovery by 25%.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"100",
+          "image":"Nightmares.png"
+        },
+        {
+          "skillId": 66,
+          "skillName": "Bloodlust",
+          "skillDescription": "For every death around the caster, recover 5 max Health, Stamina and Mana burn.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"500 & 1 Breakthrough point",
+          "image":"Bloodlust.png"
+        },
+        {
+          "skillId": 67,
+          "skillName": "Blood Sigil",
+          "skillDescription": "Consumes: Dark Stone. Create a magic circle on the ground. Certain skills have additional effects when cast within this circle. The Sigil itself will raise players' temperatures by +28 Hot while they stand inside it.",
+          "skillType":"Active",
+          "conbinations":[
+            {
+              "combName":"Blood Tendrils",
+              "withSkill":"Mana Push",
+              "withSkillImage":"ManaPush.png",
+              "effect":"The Mana Push gains Blood Tendril effects: Adds 50 Decay and 50 Physical damage. Adds 25 Impact. Add 3% Corruption to caster (once)."
+            },
+            {
+              "combName":"Blood Turret",
+              "withSkill":"Conjure",
+              "withSkillImage":"Conjure.png",
+              "effect":"Summons a Decay turret above the Sigil which lasts 30 seconds. Shoots once per second, dealing 15 Decay damage and 10 Impact. Add 6% Corruption to caster (once)."
+            },  
+            {
+              "combName":"Gift of Blood",
+              "withSkill":"Mana Ward",
+              "withSkillImage":"ManaWard.png",
+              "effect":"Receive the Gift of Blood effect for 60 seconds. -1 Health Health per second. +15% Physical Physical Frost Frost and Decay Decay damage. Gain +3% Corruption Corruption (once). Nearby ally or Summoned Ghost will receive Gift of Blood Ally"
+            },
+            {
+              "combName":"Blood Leech",
+              "withSkill":"Dager Slash",
+              "withSkillImage":"DagerSlash.png",
+              "effect":"Inflicts Blood Leech Victim on target. Player receives Blood Leech status. Adds +3% Corruption Corruption to caster (once)"
+            }
+          ],
+          "damage":null,
+          "impact":null,
+          "mana": "7",
+          "cooldown":null,
+          "cost":"600",
+          "image":"BloodSigil.png"
+        },
+        {
+          "skillId": 68,
+          "skillName": "Rupture",
+          "skillDescription": "Detonate all Hexes on nearby enemies, and all souls, for related damage.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":	"Chill: 50  Frost damage, Curse: 50 Decay damage, Haunted: 50 Ethereal damage, Scorched: 50 Fire damage, Pain: 50 Physical damage"
+          ,
+          "impact":"Chill:33 Impact, Curse:33 Impact,Doomed:33 Impact,Haunted:33 Impact,Scorched:33 Impact,Confusion: 50  Impact",
+          "mana": "10",
+          "cooldown":"10 seconds",
+          "cost":"600",
+          "image":"Rupture.png"
+        },
+        {
+          "skillId": 69,
+          "skillName": "Cleanse",
+          "skillDescription": "Requires 50% Corruption and a Mana Stone. Creates a Dark Stone, removes 30% Corruption, suffer Extreme Bleeding and 65 Decay Decay damage.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana":null,
+          "cooldown":null,
+          "cost":"600",
+          "image":"Cleanse.png"
+        },
+        {
+          "skillId": 70,
+          "skillName": "Lockwell's Revelation",
+          "skillDescription": "Increases Elemental Damage by 15% when Tired, and 30% when Very Tired.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana":null,
+          "cooldown":null,
+          "cost":"600",
+          "image":"LockwellsRevelation.png"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "The Speedster",
+      "description": "The Speedster Skills are trained by Serge Battleborn in the city of Harmattan. These skills are exclusive to The Soroboreans DLC.",
+      "image":"TheSpeedster.png",
+      "skills": [
+        {
+          "skillId": 71,
+          "skillName": "Probe",
+          "skillDescription": "A weak attack that increases Alertness level on hit. Evolves into stronger forms as Alertness level rises.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":"0.5x Damage in alert level 0, 1, 2 (inflicts confusion) and 3 (inflicts Pain), 1.15x Damage at alert level 4" ,
+          "impact":"0.15x Impact in alert level 0, 1, 2 and 3, 1.0x Impact at alert level 4",
+          "mana": "0.75 Stamina",
+          "cooldown":"0.5 seconds",
+          "cost":"50",
+          "image":"Probe.png"
+        },
+        {
+          "skillId": 72,
+          "skillName": "Efficiency",
+          "skillDescription":"Maximum Stamina increased by 25.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana":null,
+          "cooldown":null,
+          "cost":"50",
+          "image":"Efficiency.png"
+        },
+        {
+          "skillId": 73,
+          "skillName": "Metabolic Purge",
+          "skillDescription": "Passive skill that increases Corruption Corruption resistance by 10%.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"100",
+          "image":"MetabolicPurge.png"
+        },
+        {
+          "skillId": 74,
+          "skillName": "Daredevil",
+          "skillDescription": "Reduce all skill Cooldowns by 10% per Alertness level.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"500 & 1 Breakthrough point",
+          "image":"Daredevil.png"
+        },
+        {
+          "skillId": 75,
+          "skillName": "Prime",
+          "skillDescription": "Removes 2 Alertness levels, instantly resets the cooldown of the next skill used in the next 3 minutes.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":"500 seconds",
+          "cost":"600",
+          "image":"Prime.png"
+        },
+        {
+          "skillId": 76,
+          "skillName": "Unerring Read",
+          "skillDescription": "Removes 1 Alertness levels, cancels the next hit received in the next 20 seconds.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":"100 seconds",
+          "cost":"600",
+          "image":"UnerringRead.png"
+        },
+        {
+          "skillId": 77,
+          "skillName": "Blitz",
+          "skillDescription": "Increases Sprinting speed by 5% and running attack damage by 10% per Alertness level.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"600",
+          "image":"Blitz.png"
+        },
+        {
+          "skillId": 78,
+          "skillName": "Anticipation",
+          "skillDescription": "Increases physical protection stat by 2 per Alertness level.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"600",
+          "image":"Anticipation.png"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Weapon Master",
+      "description": "Weapon Master Skills are trained by Bea Battleborn, Weapons Master through the Gladiator's Arena in New Sirocco. These skills are exclusive to The Three Brothers DLC. This teacher does not have a breakthrough point, all skills are accessible to those who have unlocked the teacher. These skills are purchased with Conqueror's Medals.",
+      "image":"WeaponMaster.png",
+      "skills": [
+        {
+          "skillId": 79,
+          "skillName": "Warrior's Vein",
+          "skillDescription": "Required: Two Handed Axe. Counter an attack. If successful, strike back with high damage and impact, and inflict Extreme Bleeding on yourself and the enemy.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":"2.0x Damage" ,
+          "impact":"2.5x Impact",
+          "mana": "12 Stamina",
+          "cooldown":"50 seconds",
+          "cost":"3 Conqueror's Medals",
+          "image":"WarriorsVein.png"
+        },
+        {
+          "skillId": 80,
+          "skillName": "Dispersion",
+          "skillDescription":"Create a highly damaging shockwave that destabilizes you. If your Weapon has an elemental imbue, it uses that element and inflicts the associated Hex on foes.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":"2.0x Damage",
+          "impact":"1.5x Impact",
+          "mana":"30 Stamina",
+          "cooldown":"120 seconds",
+          "cost":"3 Conqueror's Medals",
+          "image":"Dispersion.png"
+        },
+        {
+          "skillId": 81,
+          "skillName": "Moment of Truth",
+          "skillDescription": "A highly damaging strike that bypasses 50% of enemy resistances. Lowers your own resistances by 50% for 15 seconds.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":"3.5x Damage",
+          "impact":"0.5x Impact",
+          "mana":"12 Stamina",
+          "cooldown":"15 seconds",
+          "cost":"3 Conqueror's Medals",
+          "image":"MomentofTruth.png"
+        },
+        {
+          "skillId": 82,
+          "skillName": "The Technique",
+          "skillDescription": "Unleash a flurry of 6 rapid strikes.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":"0.8x Damage",
+          "impact":"0.25x Impact",
+          "mana":"30 Stamina",
+          "cooldown":"120 seconds",
+          "cost":"3 Conqueror's Medals",
+          "image":"TheTechnique.png"
+        },
+        {
+          "skillId": 83,
+          "skillName": "Scalp Collector",
+          "skillDescription": "Inflicts Bleeding on hit. Finish off an enemy with this skill to gain the Kill Streak Buff, which grants bonus damage and speed.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":"1.2x Damage",
+          "impact":"0.1x Impact",
+          "mana":"8 Stamina",
+          "cooldown":"30 seconds",
+          "cost":"3 Conqueror's Medals",
+          "image":"ScalpCollector.png"
+        },
+        {
+          "skillId": 84,
+          "skillName": "Crescendo",
+          "skillDescription": "A quick strike that generates 1 stack of the Craze Buff on hit, which grants bonus damage. All stacks of Craze are lost if you are damaged.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana":"3 Stamina",
+          "cooldown":null,
+          "cost":"3 Conqueror's Medals",
+          "image":"Crescendo.png"
+        },
+        {
+          "skillId": 85,
+          "skillName": "Vicious Cycle",
+          "skillDescription": "A high damage and high impact sweep that inflicts Cripple on enemies.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":"2.0x Damage",
+          "impact":"3.0x Impact",
+          "mana":"15 Stamina",
+          "cooldown":"120 seconds",
+          "cost":"3 Conqueror's Medals",
+          "image":"Vicious Cycle.png"
+        },
+        {
+          "skillId": 86,
+          "skillName": "Splitter",
+          "skillDescription": "A leaping strike that increases in power as the enemy's life % decreases, and uses the element infused on the weapon. You will evade all enemy attacks while performing this move.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":"1.0x to 6.0x Damage depending on target Health %.",
+          "impact":"1.5x Impact regardless of enemy Health.",
+          "mana":"15 Stamina",
+          "cooldown":"45 seconds",
+          "cost":"3 Conqueror's Medals",
+          "image":"Splitter.png"
+        },
+        {
+          "skillId": 87,
+          "skillName": "Vital Crash",
+          "skillDescription": "A long distance running tackle that does more damage the more Health % you have and more impact the more Stamina % you have. Inflicts Confusion and Pain on you.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":"0.03x Damage * Player's Health",
+          "impact":"0.03x Impact * Player's Stamina",
+          "mana":"10 Stamina",
+          "cooldown":"60 seconds",
+          "cost":"3 Conqueror's Medals",
+          "image":"VitalCrash.png"
+        },
+        {
+          "skillId": 88,
+          "skillName": "Strafing Run",
+          "skillDescription": "Run to the left or right while unleashing a storm of 5 arrows. Best used while locked onto a target.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":"1.0x Damage",
+          "impact":"1.0x Impact",
+          "mana":"25 Stamina",
+          "cooldown":"100 seconds",
+          "cost":"3 Conqueror's Medals",
+          "image":"StrafingRun.png"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Specialist",
+      "description": "Specialist Skills are trained by Justin Garnet, Specialist Trainer through the Gladiator's Arena in New Sirocco. These skills are exclusive to The Three Brothers DLC. This teacher does not have a breakthrough point, all skills are accessible to those who have unlocked the teacher. These skills are purchased with Conqueror's Medals.",
+      "image":"Specialist.png",
+      "skills": [
+        {
+          "skillId": 89,
+          "skillName": "Brawns",
+          "skillDescription": "Increase Physical Damage by 25% and increase max stamina by 25, but lowers elemental damage by 40%.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"3 Conqueror's Medals",
+          "image":"Brawns.png"
+        },
+        {
+          "skillId": 90,
+          "skillName": "Brains",
+          "skillDescription":"Increases Elemental Damage by 15%, but lowers physical damage by 25% and increases Stamina costs by 15%.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"3 Conqueror's Medals",
+          "image":"Brains.png"
+        },
+        {
+          "skillId": 91,
+          "skillName": "Patience",
+          "skillDescription": "Increase damage from Weapon Skills by 30% but lower the damage from normal and special attacks by 20%.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"3 Conqueror's Medals",
+          "image":"Patience.png"
+        },
+        {
+          "skillId": 92,
+          "skillName": "Cruelty",
+          "skillDescription": "Increase damage of your Burning, Poison, Extreme poison by 50% and increase the damage of Bleeding, Extreme Bleeding, Blaze, Holy Blaze and Plague by 30%. Lower status resistances by 50% and Physical resistance by 10%.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"3 Conqueror's Medals",
+          "image":"Cruelty.png"
+        },
+        {
+          "skillId": 93,
+          "skillName": "Unsealed",
+          "skillDescription": "Speed up Sigil placement skills and extend the duration of Sigils by 20 seconds. Lower max life by 25. In Vanilla game (NOT Definitive Edition), the skill is bugged and does not extend Sigil durations.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"3 Conqueror's Medals",
+          "image":"Unsealed.png"
+        },
+        {
+          "skillId": 94,
+          "skillName": "Acrobatics",
+          "skillDescription": "Unhampered Dodge Rolls have increased range. Stamina cost of Dodge Rolls increased by 50%.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"3 Conqueror's Medals",
+          "image":"Acrobatics.png"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Primal Ritualist",
+      "description": "Primal Ritualist Skills are trained by Sinai, the Primal Ritualist at the Ritualist's hut in Caldera. These skills are exclusive to The Three Brothers DLC.",
+      "image":"PrimalRitualist.png",
+      "skills": [
+        {
+          "skillId": 95,
+          "skillName": "Haunting Beat",
+          "skillDescription": "Required: Ghost Drums in inventory. Deploys the Ghost Drum and causes Haunted in a small radius. There can't be another Totem within 30 meters.",
+          "skillType":"Active",
+          "conbinations":[
+            {
+              "combName":"Ghost Reverberation",
+              "withSkill":"Reverberation",
+              "withSkillImage":"Reverberation.png",
+              "effect":"Recalls the Ghost Drum and creates a series of damaging pulses in its place. Pulses once per second for between 10 and 15 seconds. Pulses deal between 15 and 25 Ethereal Ethereal damage, 10 Impact Impact"
+            },
+            {
+              "combName":"Ghost Rhythm",
+              "withSkill":"Battle Rhythm",
+              "withSkillImage":"BattleRhythm.png",
+              "effect":"When within 8 meters of a Haunting Beat, the Ghost Drum increases Protection Protection by 5"
+            },
+            {
+              "combName":"Nurturing Ghost Drum",
+              "withSkill":"Nurturing Echo",
+              "withSkillImage":"NurturingEcho.png",
+              "effect":"Restores 5 Stamina Stamina and 5 Mana Mana per second, for between 2 to 16 seconds depending on the number of charges."
+            }
+          ],
+          "damage":null ,
+          "impact":null,
+          "mana": "20 Stamina",
+          "cooldown":"120 seconds",
+          "cost":"50",
+          "image":"HauntingBeat.png"
+        },
+        {
+          "skillId": 96,
+          "skillName": "Welkin Ring",
+          "skillDescription":"Required: Sky Chimes in inventory. Deploys the Sky Chimes and causes Doom in a small radius. There can't be another Totem within 30 meters.",
+          "skillType":"Active",
+          "conbinations":[
+            {
+              "combName":"Welkin Reverberation",
+              "withSkill":"Reverberation",
+              "withSkillImage":"Reverberation.png",
+              "effect":"Recalls the Sky Chimes and creates a series of damaging pulses in their place. Pulses once per second for between 10 and 15 secondd. Pulses deal between 15 and 25 Lightning damage, 10 Impact"
+            },
+            {
+              "combName":"Welkin Rhythm",
+              "withSkill":"Battle Rhythm",
+              "withSkillImage":"BattleRhythm.png",
+              "effect":"When within 8 meters of a Welkin Ring, the Sky Chimes increase Barrier Barrier by 5."
+            },
+            {
+              "combName":"Nurturing Welkin Drum",
+              "withSkill":"Nurturing Echo",
+              "withSkillImage":"NurturingEcho.png",
+              "effect":"Restores 5 Health Health and reduces buildup of status effects by 10% per second, for between 2 to 16 seconds depending on the number of charges."
+            }
+          ],
+          "damage":null,
+          "impact":null,
+          "mana":"20 Stamina",
+          "cooldown":"120 seconds",
+          "cost":"50",
+          "image":"WelkinRing.png"
+        },
+        {
+          "skillId": 97,
+          "skillName": "Miasmic Tolerance",
+          "skillDescription": "Increase Status Effect resistance by 15% when well rested.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"50",
+          "image":"MiasmicTolerance.png"
+        },
+        {
+          "skillId": 98,
+          "skillName": "Sacred Fumes",
+          "skillDescription": "Increases Barrier by 7.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"500 & 1 Breakthrough point",
+          "image":"SacredFumes.png"
+        },
+        {
+          "skillId": 99,
+          "skillName": "Nurturing Echo",
+          "skillDescription": "Required: At least one deployed Totem within 15 meters. Generates a bubble around nearby Totems that provide restoration of some kind. Lasts longer depending on how many Charges the Totem has built up. On Ghost Drum: Restores 5 Stamina Stamina and 5 Mana Mana per second. On Sky Chimes: Restores 5 Health Health and reduces buildup of status effects by 10% per second.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": "20 Stamina",
+          "cooldown":"240 seconds",
+          "cost":"600",
+          "image":"NurturingEcho.png"
+        },
+        {
+          "skillId": 100,
+          "skillName": "Reverberation",
+          "skillDescription": "Required: Must be facing a Totem within 15 meters. Recalls a deployed totem to your inventory, and generates a zone of recurring damage. The size, damage type and duration depend on the Totem and how many Charges it has built up.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":"With Haunting Beat, sends out pulses which deal Ethereal damage and 10 Impact once per second: 0-3 Charges: Lasts 10 seconds, pulse deals 15 Ethereal damage, 4-6 Charges: Lasts 15 seconds, pulse deals 15 Ethereal damage, 7+ Charges: Lasts 15 seconds, pulse deals 25 Ethereal damage, With Welkin Ring, sends out pulses which deal Lightning damage and 10 Impact once per second:0-3 Charges: Lasts 10 seconds, pulse deals 15 Lightning damage, 4-6 Charges: Lasts 15 seconds, pulse deals 15 Lightning damage, 7+ Charges: Lasts 15 seconds, pulse deals 25 Lightning damage",
+          "impact":null,
+          "mana": "25 Stamina",
+          "cooldown":"10 seconds",
+          "cost":"600",
+          "image":"Reverberation.png"
+        },
+        {
+          "skillId": 101,
+          "skillName": "Harmony and Melody",
+          "skillDescription": "Allows you to have both a Sky Chimes totem and a Ghost Drums totem active in close proximity of each other at the same time.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"600",
+          "image":"HarmonyandMelody.png"
+        },
+        {
+          "skillId": 102,
+          "skillName": "Battle Rhythm",
+          "skillDescription": "Your deployed Sky Chimes increase Barrier by 5 and Ghost Drums increase Protection by 5 when within 8 meters. This bonus also applies to your allies.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"600",
+          "image":"BattleRhythm.png"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Traders/Missions",
+      "description": "Abilities that can be purchased usyually for 50 coins or gained for completing quests",
+      "image":"PrimalRitualist.png",
+      "skills": [
+        {
+          "skillId": 103,
+          "skillName": "Push Kick",
+          "skillDescription": "Weak attack that excels at knocking back enemies",
+          "skillType":"Active",
+          "conbinations":[
+            {
+              "combName":"Frost Kick",
+              "withSkill":"Inside a Sigil of Ice",
+              "withSkillImage":"SigilofIce.png",
+              "effect":"Creates a short-range Frost explosion where you kick. Deals 60 frost damage and 50 impact. Inflicts Slow Down"
+            }
+          ],
+          "damage":"10 Physical",
+          "impact":"65 Impact",
+          "mana": "9 Stamina",
+          "cooldown":"15 seconds",
+          "cost":"Unlocked from the beginning",
+          "image":"PushKick.png"
+        },
+        {
+          "skillId": 104,
+          "skillName": "Fire and Reload",
+          "skillDescription":"Required: Pistol, Bullet. Load the equipped pistol with a bullet, or fires if it is already loaded. Some abilities load special bullets into your pistol, which are fired using this skill.",
+          "skillType":"Active",
+          "conbinations":[
+            {
+              "combName":"Lightning Bullet",
+              "withSkill":"Inside a Sigil of Wind",
+              "withSkillImage":"SigilofWind.png",
+              "effect":"Pistol shot becomes a powerful Lightning projectile.Damage and impact are increased to (1.6x) of their normal value and converted to lightning."
+            }
+          ],
+          "damage":null,
+          "impact":null,
+          "mana":null,
+          "cooldown":null,
+          "cost":"Unlocked from the beginning",
+          "image":"FireandReload.png"
+        },
+        {
+          "skillId": 105,
+          "skillName": "Dagger Slash",
+          "skillDescription": "Required: Dagger. Simple attack with the dagger.",
+          "skillType":"Active",
+          "conbinations":[
+            {
+              "combName":"Blood Leech",
+              "withSkill":"Inside a Blood Sigil",
+              "withSkillImage":"BloodSigil.png",
+              "effect":"Inflicts Blood Leech Victim on target. Player receives Blood Leech status. Adds +3% Corruption Corruption to caster (once)"
+            }
+          ],
+          "damage":null,
+          "impact":null,
+          "mana": "2 Stamina",
+          "cooldown":"0.5 seconds",
+          "cost":"Unlocked from the beginning",
+          "image":"DaggerSlash.png"
+        },
+        {
+          "skillId": 106,
+          "skillName": "Throw Lantern",
+          "skillDescription": "Throws your equipped lantern on the enemy, creating a zone of fire for 5 seconds. Using this skill destroys the lantern.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":"Initial 25 Fire damage, Up to 20 Fire damage-over-time",
+          "impact":"60 Impact",
+          "mana": "4 Stamina",
+          "cooldown":"None",
+          "cost":"Unlocked from the beginning",
+          "image":"TrowLantern.png"
+        },
+        {
+          "skillId": 107,
+          "skillName": "Infuse Blood",
+          "skillDescription": "This skill is only accessible to The Blue Chamber Collective players who have purchased the Krypteia City Hall upgrade in New Sirocco. Infuses your weapon with the Decay element, as well as Extreme Poison and Extreme bleeding. Leeches 10% of damage dealt into your HP. Costs 20 Life to activate.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": "20 Stamina",
+          "cooldown":"240 seconds",
+          "cost":"Free",
+          "image":"InfuseBlood.png"
+        },
+        {
+          "skillId": 108,
+          "skillName": "Pommel Counter",
+          "skillDescription": "Counter an attack with a high Impact strike using the sword's pommel. Inflicts Confusion and can chain into melee attacks.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":"1.25x Damage",
+          "impact":"3.5x Impact",
+          "mana": "10 Stamina",
+          "cooldown":"100 seconds",
+          "cost":"50",
+          "image":"PommelCounter.png"
+        },
+        {
+          "skillId": 109,
+          "skillName": "Mist",
+          "skillDescription": "Grants the Mist boon, which increases your Ethereal Damage and Ethereal Resistance. Certain skills require this boon to be active.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": "8",
+          "cooldown":"120 seconds",
+          "cost":"50",
+          "image":"Mist.png"
+        },
+        {
+          "skillId": 110,
+          "skillName": "Flamethrower",
+          "skillDescription": "Required: Torch or Lantern. Shoots fire from the torch or lantern, which also inflicts the Burning status effect. This skill lowers the durability of the torch or lantern used.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":"The effects vary depending on the Lantern used with the skill.",
+          "impact":"All variations will deal 2.65 Impact impact per hit and last for 2.5 seconds",
+          "mana": "15",
+          "cooldown":"5 seconds",
+          "cost":"50",
+          "image":"Flamethrower.png"
+        },
+        {
+          "skillId": 110,
+          "skillName": "Possessed",
+          "skillDescription": "Grants the Possessed boon, which increases your Decay Damage and Decay Resistance by 20%. Certain skills require this boon to be active.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": "8",
+          "cooldown":"120 seconds",
+          "cost":"Free",
+          "image":"Possessed.png"
+        },
+        {
+          "skillId": 111,
+          "skillName": "Simeon's Gambit",
+          "skillDescription": "Deflect a melee attack and counter with a powerful strike. You will still strike if no attack was deflected, but for less damage.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":"Attack blocked: 2.0x Damage, Attack not blocked: 0.8x Damage",
+          "impact":"Attack blocked: 3.5x Impact, Attack not blocked: 1.0x Impact",
+          "mana": "25 Stamina",
+          "cooldown":"100 seconds",
+          "cost":"50",
+          "image":"SimeonsGambit.png"
+        },
+        {
+          "skillId": 112,
+          "skillName": "Puncture",
+          "skillDescription": "Close combat attack which deals high Damage and Impact, and inflicts Pain.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":"2.0x Damage",
+          "impact":"2.0x Impact",
+          "mana": "12 Stamina",
+          "cooldown":"10 seconds",
+          "cost":"50",
+          "image":"Puncture.png"
+        },
+        {
+          "skillId": 113,
+          "skillName": "Prismatic Flurry",
+          "skillDescription": "Does an extra hit for each Elemental Boon active.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":"0.8x Damage",
+          "impact":"0.8x Impact",
+          "mana": null,
+          "cooldown":"30 seconds",
+          "cost":"1 x Pure Chitin",
+          "image":"PrasmaticFlurry.png"
+        },
+        {
+          "skillId": 114,
+          "skillName": "Blessed",
+          "skillDescription": "Grants a Blessed boon, which increases your Lightning Damage and Lightning Resistance. Certain skills require this boon to be active.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": "8",
+          "cooldown":"120 seconds",
+          "cost":"50",
+          "image":"Blessed.png"
+        },
+        {
+          "skillId": 115,
+          "skillName": "Talus Cleaver",
+          "skillDescription": "Low blow that reduces the target's mobility. Inflicts Pain and Cripple.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":"1.25x Damage",
+          "impact":null,
+          "mana": "10 Stamina",
+          "cooldown":"30 seconds",
+          "cost":"50",
+          "image":"TalusCleaver.png"
+        },
+        {
+          "skillId": 116,
+          "skillName": "Elatt's Intervention",
+          "skillDescription": " It is exclusive to members of The Holy Mission of Elatt, after purchasing the required upgrade for the Chapel building. Increases Barrier by 2 and Protection by 5",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"Free",
+          "image":"EllatsIntervention.png"
+        },
+        {
+          "skillId": 117,
+          "skillName": "Execution",
+          "skillDescription": "High Damage and Impact strike that deals twice its Damage against knocked down foes.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":"Target knocked down: 3.0x Damage, Target not knocked down: 1.5x Damage",
+          "impact":"Target knocked down: 3.0x impact, Target not knocked down: 1.5x impact",
+          "mana": "12 Stamina",
+          "cooldown":"15 seconds",
+          "cost":"50",
+          "image":"Execution.png"
+        },
+        {
+          "skillId": 118,
+          "skillName": "Infuse Mana",
+          "skillDescription": "This skill is only accessible to Sorobor Academy players who have purchased the required upgrade for the Enchanting building. Infuses your weapon with the Ethereal element.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": "35",
+          "cooldown":"240 seconds",
+          "cost":"Free",
+          "image":"InfuseMana.png"
+        },
+        {
+          "skillId": 118,
+          "skillName": "Infuse Mana",
+          "skillDescription": "This skill is only accessible to Sorobor Academy players who have purchased the required upgrade for the Enchanting building. Infuses your weapon with the Ethereal element.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": "35",
+          "cooldown":"240 seconds",
+          "cost":"Free",
+          "image":"InfuseMana.png"
+        },
+        {
+          "skillId": 119,
+          "skillName": "Cool",
+          "skillDescription": "Grants the Cool boon, which increases your Frost Damage and Frost Resistance. It also increases your protection to hot weather. Certain skills require this boon to be active.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": "8",
+          "cooldown":"120 seconds",
+          "cost":"50",
+          "image":"Cool.png"
+        },
+        {
+          "skillId": 120,
+          "skillName": "Chill Hex",
+          "skillDescription": "Inflicts Chill on touch.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": "5",
+          "cooldown":"3 seconds",
+          "cost":"50",
+          "image":"ChillHex.png"
+        },
+        {
+          "skillId": 121,
+          "skillName": "Warm",
+          "skillDescription": "Grants the Warm boon, which increases your Fire Damage and Fire Resistance. It also increases your protection to cold weather. Certain skills require this boon to be active.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": "8",
+          "cooldown":"120 seconds",
+          "cost":"50",
+          "image":"Warm.png"
+        },
+        {
+          "skillId": 122,
+          "skillName": "Juggernaut",
+          "skillDescription": "Slow but powerful melee attack that inflicts Confusion. Increases your Impact Resistance during this attack.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":"3.0x Damage",
+          "impact":"+100 Impact ",
+          "mana": "10 Stamina",
+          "cooldown":"20 seconds",
+          "cost":"50",
+          "image":"Juggernaut.png"
+        },
+        {
+          "skillId": 123,
+          "skillName": "Mace Infusion",
+          "skillDescription": "Block an elemental attack, infusing your weapon with that element.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": "5 Stamina",
+          "cooldown":"20 seconds",
+          "cost":"50",
+          "image":"MaceInfusion.png"
+        },
+        {
+          "skillId": 124,
+          "skillName": "Scorch Hex",
+          "skillDescription": "Inflicts Scorched on touch.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": "5",
+          "cooldown":"3 seconds",
+          "cost":"50",
+          "image":"ScorchedHex.png"
+        },
+        {
+          "skillId": 125,
+          "skillName": "Moon Swipe",
+          "skillDescription": "Double attack that deals high damage, and that increases in power if you have the Rage or Discipline boons.",
+          "skillType":"Active",
+          "conbinations":[],
+          "damage":"0.8x Damage, With Rage:+ 0.5x Damage, With Discipline:+0.5x Damage",
+          "impact":"1.5x Impact",
+          "mana": "15 Stamina",
+          "cooldown":"30 seconds",
+          "cost":"50",
+          "image":"MoonSwipe.png"
+        },
+        {
+          "skillId": 126,
+          "skillName": "Kirouac's Breakthrough",
+          "skillDescription": "This skill is exclusive to members of The Heroic Kingdom of Levant, and is available after purchasing the required upgrade for the Alchemist shop. Increases max Health by 25 and Physical damage by 15%.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"Free",
+          "image":"KirouacsBreakthrough.png"
+        },
+        {
+          "skillId": 127,
+          "skillName": "Acceptance",
+          "skillDescription": "Increases your Cold and Hot Weather Defense by 8",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"Free",
+          "image":"Acceptance.png"
+        },
+        {
+          "skillId": 128,
+          "skillName": "Alchemical Experiment",
+          "skillDescription": "Increases all Damage you deal by 15%.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"Free",
+          "image":"AlchemicalExperiment.png"
+        },
+        {
+          "skillId": 129,
+          "skillName": "Ancestors' Memories",
+          "skillDescription": "Increases your Maximum Mana by 25",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"Free",
+          "image":"AncestorsMemories.png"
+        },
+        {
+          "skillId": 130,
+          "skillName": "Blood of Giants",
+          "skillDescription": "Increases your maximum Health by 40.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"Free",
+          "image":"BloodofGiants.png"
+        },
+        {
+          "skillId": 131,
+          "skillName": "Divine Assistance",
+          "skillDescription": "Reduces the Stamina and Mana costs of your actions by 10%.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"Free",
+          "image":"DivineAssistance.png"
+        },
+        {
+          "skillId": 132,
+          "skillName": "Logistics Expert",
+          "skillDescription": "Reduce all skill Cooldowns by 10%, increase movement speed by 5% and increase pouch capacity by 5.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"Free",
+          "image":"LogisticExpert.png"
+        },
+        {
+          "skillId": 133,
+          "skillName": "Painful Sacrifice",
+          "skillDescription": "Decreases your maximum Stamina by 15.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"Free",
+          "image":"PainfulSacrifice.png"
+        },
+        {
+          "skillId": 134,
+          "skillName": "Peacemaker Elixir",
+          "skillDescription": "Increases your maximum Health, Stamina and Mana by 20.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"Free",
+          "image":"PeacemakerElixir.png"
+        },
+        {
+          "skillId": 135,
+          "skillName": "Preferential Treatment",
+          "skillDescription": "Lower buying prices and increase selling prices.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"Free",
+          "image":"PreferentialTreatment.png"
+        },
+        {
+          "skillId": 136,
+          "skillName": "Purified",
+          "skillDescription": "Decay Resistance +20%.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"Free",
+          "image":"Purified.png"
+        },
+        {
+          "skillId": 137,
+          "skillName": "Sacrifice",
+          "skillDescription": "Decreases your maximum Stamina by 7.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"Free",
+          "image":"Sacrifice.png"
+        },
+        {
+          "skillId": 138,
+          "skillName": "Sanctified Assistance",
+          "skillDescription": "Reduces the Stamina and Mana costs of your actions by 5%.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"Free",
+          "image":"SanctifiedAssitance.png"
+        },
+        {
+          "skillId": 139,
+          "skillName": "Sanctified Protection",
+          "skillDescription": "Increases your Physical Protection by 2.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"Free",
+          "image":"SanctifiedProtection.png"
+        },
+        {
+          "skillId": 140,
+          "skillName": "Spiritual Communion",
+          "skillDescription": "Increases your Ethereal, Lightning and Decay damage by 10%.",
+          "skillType":"Passive",
+          "conbinations":[],
+          "damage":null,
+          "impact":null,
+          "mana": null,
+          "cooldown":null,
+          "cost":"Free",
+          "image":"SpiritualCommunion.png"
+        }
+      ]
+    } 
+  ]
+}
