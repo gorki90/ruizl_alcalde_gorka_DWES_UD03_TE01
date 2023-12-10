@@ -30,7 +30,6 @@ $router->add('/public/post/deleteBuild/{id}', array(
 ));
 
 $url= $_SERVER["QUERY_STRING"];
-echo "URL =".$url. "<br>";
 
 $urlParams=explode('/',$url);
 
@@ -57,9 +56,6 @@ $urlArray['params']=$urlParams[4];
     $urlArray['action']='index';
 }
 
-echo '<pre>';
-print_r($urlArray).'<br>';
-echo '</pre>';
 
 
 

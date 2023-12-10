@@ -199,7 +199,7 @@
       "name": "Kazite Spellblade",
       "description": "Kazite Spellblade skills focus on adaptability in combat and the infusion of elements into weapons. Kazite Spellblade skills are trained by Eto Akiyuki in the city of Cierzo.",
       "image":"KaziteSpellblade.png",
-      "skils": [
+      "skills": [
         {
           "skillId": 9,
           "skillName": "Steady Arm",
