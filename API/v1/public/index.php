@@ -1,17 +1,32 @@
 <?php
 require "../core/router.php";
-require "../app/controllers/post.php";
+require "../app/controllers/Post.php";
 
 $router=new Router();
 
-$router->add('/public', array(
-    'controller'=>'Home',
-    'action'=>'index'
+$router->add('/public/post/getSkills', array(
+    'controller'=>'Post',
+    'action'=>'getAllSkillTrees'
 ));
 
-$router->add('/public/post/new', array(
+$router->add('/public/post/getSkills/{id}', array(
     'controller'=>'Post',
-    'action'=>'new'
+    'action'=>'getSkillTreeById'
+));
+
+$router->add('/public/post/createBuild', array(
+    'controller'=>'Post',
+    'action'=>'createBuild'
+));
+
+$router->add('/public/post/updateBuild/{id}', array(
+    'controller'=>'Post',
+    'action'=>'updateBuild'
+));
+
+$router->add('/public/post/deleteBuild/{id}', array(
+    'controller'=>'Post',
+    'action'=>'deleteBuild'
 ));
 
 $url= $_SERVER["QUERY_STRING"];
@@ -46,32 +61,37 @@ echo '<pre>';
 print_r($urlArray).'<br>';
 echo '</pre>';
 
-if($router->match($urlArray)){
-$controller=$router->getParams()['controller'];
-$action=$router->getParams()['action'];
-$controller=new $controller();
-$controller->$action();
 
-}else{
-   echo "Route not found ".$url; 
+
+if ($router->match($urlArray)) {
+    $method = $_SERVER['REQUEST_METHOD'];
+
+    $param = [];
+
+    if ($method === 'GET') {
+        $param[] = intval($urlArray['params']) ?? null;
+    } elseif ($method === 'POST') {
+        $json = file_get_contents('php://input');
+        $param[] = json_decode($json, true);
+    } elseif ($method === 'PUT') {
+        $id = intval($urlArray['params']) ?? null;
+        $json = file_get_contents('php://input');
+        $data = json_decode($json, true);
+        $param = [$id, $data];
+    } elseif ($method === 'DELETE') {
+        $param[] = intval($urlArray['params']) ?? null;
+    }
+
+    $controller = $router->getParams()['controller'];
+    $action = $router->getParams()['action'];
+    $controllerInstance = new $controller();
+
+    if (method_exists($controllerInstance, $action)) {
+        $res = call_user_func_array([$controllerInstance, $action], $param);
+    } else {
+        echo "El método no existe.";
+    }
+} else {
+    echo "Ruta no encontrada.";
 }
-
 ?>
-
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
-    <body>
-        
-    
-
-        <script src="" async defer></script>
-    </body>
-</html>

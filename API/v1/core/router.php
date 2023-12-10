@@ -16,18 +16,16 @@ return $this->routes;
 }
 
 public function match($url){
-foreach($this->routes as $route=>$params){
-if($url['path']== $route){
-if($params['controller']==$url['controller'] && $params['action']==$url['action']){
-$this->params=$params;
-return true;
-}else{
-    return false;
+foreach($this->routes as $rout=>$params){
+$pattern=str_replace(['{id}','/'],['([^/]+)','\/'],$rout);
+$pattern='/^' . $pattern . '$/';
+
+if(preg_match($pattern,$url['path'])){
+    $this->params=$params;
+    return true;
 }
-}else{
+}
 return false;
-}
-}
 }
 
 public function getParams(){
