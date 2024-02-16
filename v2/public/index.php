@@ -1,7 +1,8 @@
 <?php
 require "../core/router.php";
 require "../app/controllers/info.php";
-require "../app/controllers/build.php";
+require "../app/controllers/Build.php";
+require "../app/models/DAO/BuildDAO.php";
 
 
 $router=new Router();
@@ -24,6 +25,11 @@ $router->add('/public/build/builds', array(
 $router->add('/public/build/builds/{id}', array(
     'controller'=>'Build',
     'action'=>'seeBuildsbyid'
+));
+
+$router->add('/public/build/autor/{id}', array(
+    'controller'=>'Build',
+    'action'=>'seeBuildsbyAutorId'
 ));
 
 $router->add('/public/build/createbuild', array(
@@ -102,4 +108,6 @@ if ($router->match($urlArray)) {
 } else {
     echo Codigos::notFound();
 }
+
+
 ?>

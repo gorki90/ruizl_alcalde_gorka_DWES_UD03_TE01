@@ -1,0 +1,298 @@
+[
+    {
+        "id": 1,
+        "buildName": "Storm Palatin",
+        "buildDescription": "A paladin that deals lightning damage",
+        "skillTrees": [
+            "Rogue Engineer",
+            "Wild Hunter",
+            "Rune Sage"
+        ],
+        "abilities": [
+            "Dez",
+            "Egoth",
+            "Fal",
+            "Shim",
+            "Runic Prefix"
+        ],
+        "equipment": {
+            "head": "White Wide Hat",
+            "chest": "Silver Armor",
+            "foot": "Gold-Lich Boots",
+            "weapon1": "Light Menders Lexicon",
+            "weapon2": "Gold-Lich Mace",
+            "backpack": "Light Menders backpack",
+            "tent": ""
+        }
+    },
+    {
+        "id": 2,
+        "buildName": "Blue Ranger",
+        "buildDescription": "A very defensive build that grants you resistances and life regeneration over time",
+        "skillTrees": [
+            "Rune Sage",
+            "Cabal Hermit",
+            "Warrior Monk"
+        ],
+        "abilities": [
+            "Puncture",
+            "Dez",
+            "Egoth",
+            "Fal",
+            "Shim",
+            "Runic Prefix",
+            "Master of Motion"
+        ],
+        "equipment": {
+            "head": "Blue Sand Helmet",
+            "chest": "Blue Sand Armor",
+            "foot": "Blue Sand Boots",
+            "weapon1": "Lantern of Souls",
+            "weapon2": "Light Menders Lexicon",
+            "backpack": "Brigands backpack",
+            "tent": "Luxury Tent"
+        }
+    },
+    {
+        "id": 3,
+        "buildName": "The Bloody Vampire",
+        "buildDescription": "End game build",
+        "skillTrees": [
+            "Cabal Hermit",
+            "Mercenary",
+            "Hex Mage"
+        ],
+        "abilities": [
+            "Conure",
+            "Blood Bullet",
+            "Blood Sigil",
+            "Cleanse",
+            "The Technique",
+            "Blood Infuse",
+            "All extra T1 skill that you can"
+        ],
+        "equipment": {
+            "head": "Wolf Medic Helmet",
+            "chest": "Wolf Medic Armor",
+            "foot": "Wolf Medic Boots",
+            "weapon1": "Vampiric Sword",
+            "weapon2": "Old Legion Gladiors",
+            "backpack": "Brigands backpack",
+            "tent": ""
+        }
+    },
+    {
+        "id": 4,
+        "buildName": "Ghost of Enmerkar",
+        "buildDescription": "A fun build with range attacks, high defense, and strong one-to-one fight",
+        "skillTrees": [
+            "Kazite Spellblade",
+            "Warrior Monk",
+            "Philosopher"
+        ],
+        "abilities": [
+            "Infuse Frost",
+            "Elemental Discharge",
+            "Master of Motion",
+            "Counterstrike",
+            "Brace",
+            "Mana Ward",
+            "Fire Sigil"
+        ],
+        "equipment": {
+            "head": "Antique Plate Helm",
+            "chest": "Coral Armor",
+            "foot": "Antique Plate Boots",
+            "weapon1": "Dreamer Halberd",
+            "weapon2": "Iron Halberd",
+            "backpack": "Zhorns Hunting backpack",
+            "tent": ""
+        }
+    },
+    {
+        "id": 5,
+        "buildName": "The Dominator",
+        "buildDescription": "A face-to-face build that destroys the enemies in 360 degrees",
+        "skillTrees": [
+            "Cabal Hermit",
+            "Warrior Monk",
+            "Hex Mage"
+        ],
+        "abilities": [
+            "Moon Swipe",
+            "Wind Infuse",
+            "Master of Motion",
+            "Blood Sigil",
+            "Counterstrike",
+            "Focus",
+            "Brace"
+        ],
+        "equipment": {
+            "head": "Master Kazite Cat Mask",
+            "chest": "Wolf Plate Armor",
+            "foot": "Noble Shoes",
+            "weapon1": "Tsar Halberd",
+            "weapon2": "",
+            "backpack": "Brigands backpack",
+            "tent": "Luxury Tent"
+        }
+    },
+    {
+        "id": 6,
+        "buildName": "Disk of Death",
+        "buildDescription": "High damage with Chakrams",
+        "skillTrees": [
+            "Warrior Monk",
+            "Philosopher",
+            "Primal Ritualist"
+        ],
+        "abilities": [
+            "Brace",
+            "Focus",
+            "Master of Motion",
+            "Flash Onslaught",
+            "Chakram Pierce",
+            "Chakram Dance",
+            "Chakram Arc",
+            "Welkin Ring",
+            "Haunting Beat",
+            "Nurturing Echo"
+        ],
+        "equipment": {
+            "head": "Antique Plate Helm",
+            "chest": "Antique Plate Armor",
+            "foot": "Antique Plate Boots",
+            "weapon1": "Frozen Chakram",
+            "weapon2": "Tsar Chakram",
+            "backpack": "Light Menders backpack",
+            "tent": ""
+        }
+    },
+    {
+        "id": 7,
+        "buildName": "Mana Knight",
+        "buildDescription": "High damage and protection, a conbination os close range damage with range damage",
+        "skillTrees": [
+            "Cabal Hermit",
+            "Wild Hunter",
+            "Warrior Monk"
+        ],
+        "abilities": [
+            "Dez",
+            "Egoth",
+            "Fal",
+            "Shim",
+            "Runic Prefix",
+            "Counterstrike",
+            "Perfect Strike"
+        ],
+        "equipment": {
+            "head": "Whie Arcane Hood",
+            "chest": "Runic Armor",
+            "foot": "Antique Plate Boots",
+            "weapon1": "Light Menders Lexicon",
+            "weapon2": "Any Shield",
+            "backpack": "Light Menders backpack",
+            "tent": ""
+        }
+    },
+    {
+        "id": 8,
+        "buildName": "Hermit of Doom",
+        "buildDescription": "A paladin that deals lightning damage",
+        "skillTrees": [
+            "Cabal Hermit",
+            "Rogue Engineer",
+            "Warrior Monk"
+        ],
+        "abilities": [
+            "Simeons Gambit",
+            "Wind Sigil",
+            "Conjure",
+            "Sweep Kick",
+            "Brace",
+            "Perfect Strike",
+            "Flash Onslaught"
+        ],
+        "equipment": {
+            "head": "Master Dessert Veil",
+            "chest": "Silver Armor",
+            "foot": "Orichalcum Boots",
+            "weapon1": "Werling Spear",
+            "weapon2": "",
+            "backpack": "Light Menders backpack",
+            "tent": ""
+        }
+    },
+    {
+        "id": 9,
+        "buildName": "Virgin Warrior",
+        "buildDescription": "A light warrior",
+        "skillTrees": [
+            "Rogue Engineer",
+            "Cabal Hermit",
+            "Rune Sage"
+        ],
+        "abilities": [
+            "Puncture",
+            "Egoth",
+            "Fal",
+            "Shim",
+            "Internalized Lexicon",
+            "Backstab",
+            "serpents parry",
+            "Probe",
+            "Wind Infuse"
+        ],
+        "equipment": {
+            "head": "Virgin Helmet",
+            "chest": "Virgin Armor",
+            "foot": "Virgin Boots",
+            "weapon1": "Radiant Wolf Sword",
+            "weapon2": "Zhorns Glowstone Dagger",
+            "backpack": "Glowstone backpack",
+            "tent": "Luxury Tent"
+        }
+    },
+    {
+        "id": 10,
+        "buildName": "Mad Doctor",
+        "buildDescription": "An easy to use build with high damage",
+        "skillTrees": [
+            "Rogue Engineer",
+            "Hex Mage",
+            "Rune Sage"
+        ],
+        "abilities": [
+            "Dez",
+            "Egoth",
+            "Fal",
+            "Shim",
+            "Runic Prefix",
+            "Jinx"
+        ],
+        "equipment": {
+            "head": "Jade-Lich Mask",
+            "chest": "Jade-Lich Armor",
+            "foot": "Jade-Lich Boots",
+            "weapon1": "Lexicon",
+            "weapon2": "Gold-Lich Mace",
+            "backpack": "Zhorns Hunting backpack",
+            "tent": ""
+        }
+    },
+    {
+        "nombre": "Nombre de la build",
+        "descripcion": "Descripci\u00f3n de la build",
+        "skills": "\u00c1rboles de habilidades",
+        "abilities": "Habilidades",
+        "head": "Equipamiento",
+        "chest": "chest",
+        "foot": "foot",
+        "weapon1": "weapon1",
+        "weapon2": "weapon2",
+        "tent": "tent",
+        "autor": 2,
+        "backpack": "backpack"
+    }
+]
