@@ -1,16 +1,16 @@
 <?php
 require "../core/router.php";
-require "../app/controllers/Post.php";
+require "../app/controllers/info.php";
 
 $router=new Router();
 
-$router->add('/public/post/getSkills', array(
-    'controller'=>'Post',
+$router->add('/public/info/getSkills', array(
+    'controller'=>'Info',
     'action'=>'getAllSkillTrees'
 ));
 
-$router->add('/public/post/getSkills/{id}', array(
-    'controller'=>'Post',
+$router->add('/public/info/getSkills/{id}', array(
+    'controller'=>'Info',
     'action'=>'getSkillTreeById'
 ));
 

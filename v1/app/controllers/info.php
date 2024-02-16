@@ -1,5 +1,5 @@
 <?php
-class Post{
+class Info{
 function __construct(){
 
 }
@@ -74,7 +74,11 @@ function getSkillTreeById($id){
     if (!$idExists) {
         echo "El id " . $id . " no existe.";
     }
+
+    return $datos;
+    print_r($datos);
     ?>
+     
 <?php
 }
 
